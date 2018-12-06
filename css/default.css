@@ -26,7 +26,7 @@ body {
 header {
       width: 100%;
       height: 100vh;
-      background: url(../images/erik-odiin-539947-unsplash.jpg);
+      background: url(../images/erik-odiin-539947-unsplash.jpg) no-repeat center;
       background-size: cover;
       background-position: center;
 }
@@ -39,6 +39,14 @@ header {
       text-align: justify;
 }
  
+.inner-container {
+    text-align: center;
+    position: absolute;
+    color: white;
+    height: auto;
+    margin-top: 200px;
+}
+
 .logo {
       line-height: 60px;
       position: fixed;
