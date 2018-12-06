@@ -22,6 +22,35 @@ body {
     font-size: 24px;
     padding: 25px;
 }
+
+h1 {
+    font-size: 7em;
+    font-family: "Shadows into Light", sans-serif;
+    
+}
+
+h2 {
+    margin-top: -17px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1.7em;
+}
+
+a {
+    margin-top: 20px;
+    font-size: 1.3em;
+    font-family: "Source Sans Pro", sans-serif
+}
+
+.btn {
+    display: inline-block;
+    width: 200px;
+    font-weight: bold;
+    padding: 10px;
+    color: #fff;
+    border: 4px solid #fff;
+    text-align: center;
+    outline: none;
+}
  
 header {
       width: 100%;
@@ -31,20 +60,12 @@ header {
       background-position: center;
 }
  
-.content {
-      width: 94%;
-      margin: 4em auto;
-      font-size: 20px;
-      line-height: 30px;
-      text-align: justify;
-}
- 
 .inner-container {
     text-align: center;
     position: absolute;
     color: white;
     height: auto;
-    margin-top: 200px;
+    margin-top: 500px;
 }
 
 .logo {
