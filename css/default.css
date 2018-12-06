@@ -60,12 +60,13 @@ header {
       background-position: center;
 }
  
-.inner-container {
+.headline {
     text-align: center;
     position: absolute;
     color: white;
     height: auto;
-    margin-top: 500px;
+    margin-top: 450px;
+    width: 1800px;
 }
 
 .logo {
