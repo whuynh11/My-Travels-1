@@ -50,8 +50,16 @@ a {
     border: 4px solid #fff;
     text-align: center;
     outline: none;
+    text-decoration: none;
+    transition: background-color 0.2s ease-out, color 0.2s ease-out;
 }
  
+.btn:hover,.btn:active {
+    background-color: #fff;
+    color: #000;
+    transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}
+
 header {
       width: 100%;
       height: 100vh;
@@ -65,7 +73,7 @@ header {
     position: absolute;
     color: white;
     height: auto;
-    margin-top: 450px;
+    margin-top: 475px;
     width: 1800px;
 }
 
