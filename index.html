@@ -1,147 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Will's site</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/default.css" type="text/css">
-         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        
-        <nav class="navbar navbar-default">
-          <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="https://www.hubworks.com/" target="_blank">Brand</a>
-            </div>
+<head>
+      <title>Will's site</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/default.css" type="text/css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+      <title>Responsive Sticky Navbar</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+      <script type="text/javascript">
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav">
-                <li><a href="#" class="nav-link">What I Pack<span class="sr-only">(current)</span></a></li>
-                <li><a href="#" class="nav-link">It's Us</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Travels<span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Los Angeles, California</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">San Diego, California</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">San Francisco, California</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">Las Vegas, Nevada</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">New York City, New York</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">Zion National Park, Utah</a></li>
-                    <li role="separator" class="divider"></li>   
-                    <li><a href="#">Seattle, Washington</a></li>
-                  </ul>
-                </li>
-              </ul>
-              <ul class="nav navbar-nav navbar-right">
-                <li><a href="#" class="nav-link">Link</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div><!-- /.navbar-collapse -->
-          </div><!-- /.container-fluid -->
-        </nav>
-        
-        <div class="container"> 
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h1 class="main-title">My Discovery Travels</h1>
-                    <h3>Once upon an adventure</h3>
-                </div>
-            </div>
-        </div>
-        
-        <div class="container-fluid"> 
-            <div class="row">
+      // Menu-toggle button
+
+      $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+
+      // Scrolling Effect
+
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+
+            else {
+                  $('nav').removeClass('black');
+            }
+      })
+
+
+      </script>
+</head>
+<body>
+      <div class="wrapper">
+            <header>
                 <div class="col-md-12">
                     <img src="images/erik-odiin-539947-unsplash.jpg" class="img-responsive"/>
                 </div>
-                <div class="col-md-12">
-                     <p class="hp-text"><center>This image is cool!</center></p>
-                </div>
+                  <nav>
+                    <div class="menu-icon">
+                          <i class="fa fa-bars fa-2x"></i>
+                    </div>
+                    <div class="logo">
+                          LOGO
+                    </div>
+                    <div class="menu">
+                      <ul>
+                        <li><a href="#">What I Pack</a></li>
+                        <li><a href="#">About Me</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Travels</a></li>
+                      </ul>
+                    </div>
+                  </nav>
+            </header>
+            <div class="container">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <div class="parallax">
+                </div>    
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <div class="parallax">
+                </div>    
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
             </div>
-        </div>
-         
-        <div class="container container-about-us">
-            <div class="row">
-                <div class="col-md-6">
-                    <table>
-                     <tbody>
-                        <tr>
-                          <th>Company Name</th>
-                          <th>Number of Items to Ship</th>
-                          <th>Next Action</th>
-                        </tr>
-                        <tr>
-                          <td rowspan="1">Adam's Greenworks</td>
-                          <td>14</td>
-                          <td>Package Items</td>
-                        </tr>
-                        <tr>
-                          <td>Baker's Bike Shop</td>
-                          <td>3</td>
-                          <td>Send Invoice</td>
-                        </tr>
-                           <tr>
-                          <td>Davie's Burgers</td>
-                          <td>2</td>
-                          <td>Send Invoice</td>
-                        </tr>
-                        <tr>
-                          <td>Miss Sally's Southern</td>
-                          <td>4</td>
-                          <td>Ship</td>
-                        </tr>
-                        <tr>
-                          <td>Summit Resort Rentals</td>
-                          <td>4</td>
-                          <td>Ship</td>
-                        </tr>
-                      </tbody>
-                      <tfoot>
-                        <tr>
-                          <td>Strike Fitness</td>
-                          <td>1</td>
-                          <td>Enter Order</td>
-                        </tr>
-                     </tfoot>
-                  </table>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid"> 
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="images/luca-bravo-275599-unsplash.jpg" class="img-responsive"/>
-                </div>
-                <div class="col-md-6">
-                    <img src="images/new-york-buildings-city-night-minimalism-4e-2880x1800.jpg" class="img-responsive"/>
-                </div>
-                <div class="col-md-12">
-                     <p class="hp-text"><center>This image is cool!</center></p>
-                </div>
-            </div>
-        </div>
-    </body>
+      </div>
+</body>
 </html>
