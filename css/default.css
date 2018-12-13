@@ -12,7 +12,6 @@ body {
 .col-md-12 {
     width: 100%;
     padding: 0;
-    
 }
 
 .container {
@@ -21,10 +20,11 @@ body {
     background: #f9f9f9;
     font-size: 24px;
     padding: 25px;
+    width: 60%;
 }
 
 h1 {
-    font-size: 7em;
+    font-size: 10em;
     font-family: "Shadows into Light", sans-serif;
     
 }
@@ -63,7 +63,7 @@ a {
 header {
       width: 100%;
       height: 100vh;
-      background: url(../images/erik-odiin-539947-unsplash.jpg) no-repeat center;
+      background: url(../images/airport-2373727_1920.jpg) no-repeat center;
       background-size: cover;
       background-position: center;
 }
@@ -134,11 +134,16 @@ nav ul li a {
       display: none;
 }
 
+p {
+    font-size: 16px !important;
+}
+
 .parallax {
     background: url(../images/luca-bravo-275599-unsplash.jpg) no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 500px;
+    width: 100%;
 }
  
 .parallax-1 {
