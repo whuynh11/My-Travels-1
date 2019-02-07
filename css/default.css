@@ -9,9 +9,9 @@ body {
  background: #151519;
 }
 button{
- position:absolute;
- top:50%;
- left:50%;
+ position: absolute;
+ top: 20%;
+ left: 50%;
  transform: translate(-50%, -50%)
 }
 button {
@@ -88,7 +88,6 @@ button:hover:after {
 
 h1 {
     font-size: 10em;
-    font-family: "Shadows into Light", sans-serif;
     
 }
 
@@ -136,7 +135,7 @@ header {
     position: absolute;
     color: white;
     height: auto;
-    margin-top: 475px;
+    margin-top: 350px;
     width: 1800px;
 }
 
@@ -215,6 +214,7 @@ p {
     background-attachment: fixed;
     height: 500px;
 }
+
 @media(max-width: 786px) {
  
       .logo {
