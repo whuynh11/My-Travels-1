@@ -19,7 +19,7 @@ body {
 }
 
 .navbar-default .navbar-brand {
-    color: black;
+    color: white;
 }
 
 .img-container {
@@ -129,7 +129,7 @@ body, html{
 }
 
 .pimg2{
-  background-image:url('../images/new-york-time-square-night-time.jpg');
+  background-image:url('../images/central-park.jpg');
   min-height:400px;
 }
 
